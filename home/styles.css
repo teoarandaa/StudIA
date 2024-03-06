@@ -40,9 +40,19 @@ h1{
     font-size: 20px;
     margin-top: 40px;
     justify-content: center;
+    background-color: #f0f0f0;
     font-size: 60px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 600;
+}
+
+.partytext {
+  font-size: 100px;
+  background: linear-gradient(45deg, #FFD700, #FF4500);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 200%;
+  animation: gradientAnimation 5s infinite alternate;
 }
 
 .menu-desplegable {
@@ -92,3 +102,12 @@ h1{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-left: 40px;
   }
+
+  @keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
