@@ -34,8 +34,30 @@ h1{
     margin-bottom: 100px;
 }
 
-.h1_que_somos{
-    font-size: 20px;
+.contenedor {
+  width: 2680px;
+}
+
+.que_somos {
+  display: inline;
+}
+
+.body_que_somos {
+  display: inline;
+  width: 400px;
+}
+
+.remarkables {
+  display: inline;
+  padding-bottom: 30px;
+  background: linear-gradient(45deg, #0080FF, #00FF6F);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 200%;
+  animation: gradientAnimation 3s infinite alternate;
+}
+
+.video {
 }
 
 .h1_objetivo{
@@ -54,7 +76,7 @@ h1{
 }
 
 .partytext {
-  font-size: 100px;
+  font-size: 60px;
   background: linear-gradient(45deg, #0080FF, #00FF6F);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -83,8 +105,11 @@ h1{
   }
   
   .menu-desplegable a:hover {
-    background-color: #DFDFDF;
-    color:black;
+    background: linear-gradient(45deg, #0080FF, #00FF6F);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 200%;
+    animation: gradientAnimation 3s infinite alternate;
   }
 
   .contenedor {
@@ -99,6 +124,7 @@ h1{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-right: 40px;
     font-size: 30px;
+    font-weight: 700;
   }
 
   .objetivo{
