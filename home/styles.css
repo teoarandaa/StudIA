@@ -1,30 +1,37 @@
 header{
-    background-color:lightskyblue;
-    height: 93.88px ;
-    border-radius: 20px;
-    border-color: darkblue;
-    border-style:groove;
-    background-image: url("/images/gif_tech.gif");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+    background-color:#f0f0f0;
+    height: 150px;
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-right: -10px;
+
 }
 h1{
     text-align: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 1000;
-    padding-top: 12px;
-    font-size: 45px;
-    color: #f0f0f0;
-    
+    font-size: 50px;
+    color: black;
+    padding-bottom: 30px;
+}
+
+.h1_IA {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 1000;
+    font-size: 50px;
+    padding-bottom: 30px;
+    background: linear-gradient(45deg, #0080FF, #00FF6F);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 200%;
+    animation: gradientAnimation 3s infinite alternate;
 }
 .studia{
     display: flex;
     justify-content: center;
     align-items: center;
     padding-left: 680px;
-    margin-bottom: 50px;
-    margin-top: -20px;
+    margin-bottom: 100px;
 }
 
 .h1_que_somos{
@@ -40,7 +47,7 @@ h1{
     font-size: 20px;
     margin-top: 40px;
     justify-content: center;
-    background-color: #f0f0f0;
+    background-color: white;
     font-size: 60px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 600;
@@ -48,11 +55,11 @@ h1{
 
 .partytext {
   font-size: 100px;
-  background: linear-gradient(45deg, #FFD700, #FF4500);
+  background: linear-gradient(45deg, #0080FF, #00FF6F);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-size: 200% 200%;
-  animation: gradientAnimation 5s infinite alternate;
+  animation: gradientAnimation 4s infinite alternate;
 }
 
 .menu-desplegable {
@@ -61,21 +68,22 @@ h1{
     padding: 0;
     margin: 0;
     margin-left: 400px;
-    margin-bottom: -10px;
+    margin-bottom: 30px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 1000;
-    background-color: black;
+    background-color: #f0f0f0;
+    font-size: 20px;
   }
   
   .menu-desplegable a {
     text-decoration: none;
-    color:#f0f0f0;
+    color:black;
     padding: 10px;
     border-bottom: 1px;
   }
   
   .menu-desplegable a:hover {
-    background-color: #f0f0f0;
+    background-color: #DFDFDF;
     color:black;
   }
 
@@ -84,13 +92,13 @@ h1{
   }
   
   .que_somos {
-    border: 1px solid #ddd;
     padding: 10px;
-    width: 50%;
-    margin-left: 200px;
+    width: 60%;
+    margin-left: 100px;
     margin-top: 60px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-right: 40px;
+    font-size: 30px;
   }
 
   .objetivo{
@@ -103,11 +111,105 @@ h1{
     margin-left: 40px;
   }
 
+  /* Adjustments for mobile devices and apology message */
+.mobile-message {
+    display: none;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    padding: 20px;
+    margin-top: 50px;
+    font-size: 1.2em;
+    color: white;
+    text-align: justify;
+    background-color: white;
+    flex-direction: column; /* Align children in a column */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.h1_mobile {
+  display: none;
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  padding: 20px;
+  margin-top: 50px;
+  font-size: 1.2em;
+  color: white;
+  text-align: justify;
+  background-color: white;
+  flex-direction: column; /* Align children in a column */
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Adjustments for desktop devices and apology message */
+.desktop-message {
+    display: none;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    padding: 20px;
+    margin-top: 50px;
+    font-size: 1.2em;
+    color: white;
+    text-align: justify;
+    background-color: white;
+    flex-direction: column; /* Align children in a column */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.h1_desktop {
+  display: none;
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  padding: 20px;
+  margin-top: 50px;
+  font-size: 1.2em;
+  color: black;
+  text-align: justify;
+  background-color: white;
+  flex-direction: column; /* Align children in a column */
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
   @keyframes gradientAnimation {
     0% {
         background-position: 0% 50%;
     }
+    50% {
+        background-position: 50% 100%;
+    }
+
     100% {
-        background-position: 100% 50%;
+      background-position: 100% 50%;
     }
 }
+
+/*Media Query for screens smaller than 1024px (Both Landscape and Portrait) */
+@media only screen and (max-width: 1521px) {
+    /* Hide main content and display desktop message */
+    header, .contenedor, .party, .desktop-message {
+        display: none;
+    }
+
+    .desktop-message {
+        display: flex; /* Show desktop message */
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+/* Media Query specifically for Mobile Devices */
+@media only screen and (max-width: 1521px) and (orientation: portrait) {
+    .mobile-message {
+        display: flex; /* Show mobile message */
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    /* Hide all other content */
+    header, .contenedor, .party, .desktop-message {
+      display: none;
+  }
+} 
