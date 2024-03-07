@@ -5,7 +5,6 @@ header{
     margin-top: -10px;
     margin-left: -10px;
     margin-right: -10px;
-
 }
 h1{
     text-align: center;
@@ -43,6 +42,13 @@ body {
     margin-bottom: 100px;
 }
 
+.title_que_somos {
+  margin-left: 10px;
+  background: radial-gradient(#eff1ff,black 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 120% 120%;
+}
 /*PACK 1*/
 .body_que_somos1 {
   display: inline;
@@ -121,12 +127,53 @@ body {
 }
 
 .partytext {
-  font-size: 60px;
+  padding-top: 150px;
+  font-size: 100px;
   background: linear-gradient(45deg, #0080FF, #00FF6F);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-size: 200% 200%;
   animation: gradientAnimation 4s infinite alternate;
+  transition: top 0.3s;
+
+  /*ANIMACION APARICION TEXTO AL HACER SCROLL*/
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 2s ease, transform 2s ease;
+  height: 500px; /* Altura suficiente para permitir el desplazamiento */
+}
+
+.mostrar {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.container_widget {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -200px;
+}
+
+.widget {
+  background: linear-gradient(45deg, #0080FF, #00FF6F);
+  width: 200px;
+  height: 200px;
+  border-radius: 30px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.widget1 {
+
+}
+
+.widget2 {
+
+}
+
+.spacer {
+  flex-basis: 30px;
 }
 
 .menu-desplegable {
@@ -268,6 +315,15 @@ body {
     100% {
       background-position: 100% 50%;
     }
+}
+
+@keyframes radial-gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  100% {
+      background-position: 50% 100%;
+  }
 }
 
 /*Media Query for screens smaller than 1024px (Both Landscape and Portrait) */
