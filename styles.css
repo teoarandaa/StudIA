@@ -368,7 +368,7 @@ body {
 }
 
 /*Media Query for screens smaller than 1024px (Both Landscape and Portrait) */
-@media only screen and (max-width: 1780px) {
+@media only screen and (max-width: 1024px) {
     /* Hide main content and display desktop message */
     header, .contenedor, .party, .desktop-message, .video_row, .footer_refs {
         display: none;
@@ -384,7 +384,7 @@ body {
 }
 
 /* Media Query specifically for Mobile Devices */
-@media only screen and (max-width: 1780px) and (orientation: portrait) {
+@media only screen and (max-width: 1024px) and (orientation: portrait) {
     .mobile-message {
         display: flex; /* Show mobile message */
         flex-direction: column;
